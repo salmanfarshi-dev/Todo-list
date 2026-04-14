@@ -1,57 +1,64 @@
-body{
+body {
   background: #1a1a1a;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.content-div{
+h1 {
+  font-size: 60px;
+}
+.content-div {
   width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 100px;
 }
-.main-content{
+.main-content {
   background: aqua;
   padding: 30px 60px;
   border-radius: 10px;
   width: 700px;
- 
 }
-input,textarea{
+input,
+textarea {
   margin-top: 10px;
   outline: none;
   border: 1px solid transparent;
   transition: 0.3s ease;
 }
-input:focus, textarea:focus{
+input:focus,
+textarea:focus {
   background: transparent;
   border-color: #1a1a1a;
+}
 
+.card-items {
+  display: flex;
+  row-gap: 20px;
 }
-.card-items{
-  grid-template-columns: repeat(2,1fr);
-  gap: 20px;
-}
-.button{
+.Button {
+  display: flex;
   text-align: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+.update {
+  display: none;
 }
 
-
-
-@media (min-width:320px) and (max-width:575.99px){
-  .card-items{
-  grid-template-columns: repeat(1,1fr);
-}
-.main-content{
-  width: 400px;
- 
-}
+@media (min-width: 320px) and (max-width: 575.99px) {
+  h1 {
+    font-size: 30px;
+  }
+  .main-content {
+    width: 100%;
+  }
 }
 
-
-@media (min-width:576px) and (max-width:767.99px){
-  .card-items{
-  grid-template-columns: repeat(1,1fr);
-}
-.main-content{
-  width: 500px;
-}
+@media (min-width: 576px) and (max-width: 767.99px) {
+  .card-items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .main-content {
+    width: 100%;
+  }
 }
